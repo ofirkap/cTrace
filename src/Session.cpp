@@ -46,7 +46,9 @@ Session &Session::operator=(const Session &other) {
     if (this != &other) {
         g = other.getG();
         treeType = other.getTreeType();
-        agents.clear();
+        for (auto &agent : agents)
+            if (agent != nullptr)
+                delete (agent);
         for (auto agent : other.agents)
             agents.push_back(agent->clone());
         infected = other.getInfected();
