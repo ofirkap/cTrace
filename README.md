@@ -1,3 +1,6 @@
+# cTrace tracing simulation
+## compiled on Ubuntu 18.04.1 LTS
+
 cTrace is a program that simulates s contact tracing system for combating the spread of a virus.
 The program simulates a social network (represented as a graph),
 in which an epidemic is spreading, and contact tracers are searching for infected people,
